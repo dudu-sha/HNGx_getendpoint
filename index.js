@@ -14,7 +14,7 @@ app.get("/api",(req, res) => {
         "current_day":current_day[day-1],
         "utc_time":new Date(new Date().toUTCString()),
         "github_file_url":"https://github.com/dudu-sha/HNGx_getendpoint/blob/master/index.js",
-        "github_repo_URL":"https://github.com/dudu-sha/HNGx_getendpoint.git",
+        "github_repo_url":"https://github.com/dudu-sha/HNGx_getendpoint.git",
         "track":req.query.track,
         "status_code":res.statusCode
     })
