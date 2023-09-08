@@ -12,7 +12,7 @@ app.get("/api",(req, res) => {
     res.json({
         "slack_name":req.query.slack_name,
         "current_day":current_day[day-1],
-        "utc_time":new Date(new Date().toUTCString()),
+        "utc_time":new Date().toISOString().slice(0,-5) + 'Z',
         "github_file_url":"https://github.com/dudu-sha/HNGx_getendpoint/blob/master/index.js",
         "github_repo_url":"https://github.com/dudu-sha/HNGx_getendpoint.git",
         "track":req.query.track,
